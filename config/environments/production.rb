@@ -10,6 +10,11 @@ Rails.application.configure do
   # Rake tasks automatically ignore this option for performance.
   config.eager_load = true
 
+  # Action Cable endpoint configuration
+  config.action_cable.allowed_request_origins = [ 'http://useli.ru', /http:\/\/udeli.*/ ]
+  # config.action_cable.url = '/cable'
+  config.force_ssl = false
+
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
