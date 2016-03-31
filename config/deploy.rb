@@ -1,10 +1,10 @@
 # config valid only for Capistrano 3.1
 lock '3.4.0'
 
-set :application, 'udeli'
-set :repo_url, 'git@bitbucket.org:hppcody/510mil-mvc.git'
+set :application, 'chat'
+set :repo_url, 'git@github.com:bjsmth/action_cable_chat.git'
 
-set :deploy_to, '/home/rails/udeli'
+set :deploy_to, '/home/rails/chat'
 
 set :linked_files, %w{config/database.yml db/production.sqlite3}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads}
